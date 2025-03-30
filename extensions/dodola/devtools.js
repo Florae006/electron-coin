@@ -4,6 +4,10 @@ chrome.devtools.panels.create(
   "devtools.html",         // 选项卡内容页面
   function (panel) {
     // 选项卡创建后的回调
-    console.log('面板已创建', panel);
+    // console.log('面板已创建', panel);
   }
 );
+
+
+const contentDiv = document.getElementById('content');
+contentDiv.textContent = 'Hello, this is my custom panel!';
