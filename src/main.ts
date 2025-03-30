@@ -13,11 +13,11 @@ function createWindow() {
     }
   });
 
-  win.loadFile('index.html');
+  win.loadFile('../index.html');
   win.webContents.openDevTools();
 }
 
-const DEVTOOL_PATH = path.join(__dirname, 'extensions', 'dodola');
+const DEVTOOL_PATH = path.join(__dirname, '..', 'extensions', 'dodola');
 
 app.whenReady().then(async () => {
 
@@ -27,10 +27,10 @@ app.whenReady().then(async () => {
     allowUniversalAccessFromFileUrls: true
   }).then(() => {
     console.log('dodola loaded');
-  }).catch((err) => {
+  }).catch((err: any) => {
     console.log('dodola load failed', err);
   })
-  
+
   createWindow()
 
   app.on('activate', () => {

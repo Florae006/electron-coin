@@ -2,16 +2,21 @@
   "name": "electron-coin",
   "version": "1.0.0",
   "description": "A simple Electron application",
-  "main": "main.js",
+  "main": "main.ts",
   "scripts": {
-    "start": "chcp 65001 && electron .",
+    "start": "npm run build && chcp 65001 && electron ./dist/main.js",
+    "build": "tsc -p .",
+    "watch": "tsc -w",
+    "dev": "tsc -p . --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dodola",
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "electron": "^35.1.2"
-  },
-  "dependencies": {}
+    "@types/electron": "^1.6.12",
+    "@types/node": "^22.13.14",
+    "electron": "^35.1.2",
+    "typescript": "^5.8.2"
+  }
 }
