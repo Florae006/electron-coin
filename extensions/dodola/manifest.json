@@ -3,5 +3,11 @@
   "version": "1.0",
   "devtools_page": "devtools.html",
   "manifest_version": 3,
-  "description": "A simple Electron application"
+  "description": "A simple Electron application",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
 }

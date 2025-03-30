@@ -7,7 +7,3 @@ chrome.devtools.panels.create(
     // console.log('面板已创建', panel);
   }
 );
-
-
-const contentDiv = document.getElementById('content');
-contentDiv.textContent = 'Hello, this is my custom panel!';

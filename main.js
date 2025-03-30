@@ -17,9 +17,11 @@ function createWindow() {
   win.webContents.openDevTools();
 }
 
+const DEVTOOL_PATH = path.join(__dirname, 'extensions', 'dodola');
+
 app.whenReady().then(async () => {
 
-  await session.defaultSession.loadExtension('D:\\playground\\Projects\\electron-coin\\extensions\\dodola', {
+  await session.defaultSession.loadExtension(DEVTOOL_PATH, {
     allowFileAccess: true,
     allowFileAccessFromFileUrls: true,
     allowUniversalAccessFromFileUrls: true
