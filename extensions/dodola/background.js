@@ -1,0 +1,1 @@
+console.log("Dodola DevTools extension loaded");

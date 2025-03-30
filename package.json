@@ -1,0 +1,17 @@
+{
+  "name": "electron-coin",
+  "version": "1.0.0",
+  "description": "A simple Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "chcp 65001 && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dodola",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "electron": "^35.1.2"
+  },
+  "dependencies": {}
+}
